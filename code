@@ -1,0 +1,10 @@
+{
+ "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/Crime%20index%20by%20countries%202020.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Country","type": "ordinal"},
+    "y": {"field": "Crime Index","type": "quantitative"}
+  }
+}
+
+
