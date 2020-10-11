@@ -11,6 +11,33 @@
         }
   }
 }
+--------------------
+{
+  "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv" },
+
+  "transform": [
+    {
+      "aggregate": [{
+       "op": "mean",
+       "field": "rate",
+       "as": "mean crime rate"
+      }],
+      "groupby": ["country.territory"]
+    }
+  ],
+
+  "mark": "bar",
+
+  "encoding": {
+    "y": { "field": "country.territory", 
+    "type": "ordinal", "title": "country",
+    "sort": "-x"},
+
+    "x": { "field": "mean crime rate", 
+    "type": "quantitative" }
+  }
+}
+
 
 
 # line graph - trend
