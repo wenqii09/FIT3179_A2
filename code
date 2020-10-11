@@ -16,17 +16,21 @@
 # line graph - trend
 {
   "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv"},
-  "mark": "line",
+  
+  "mark": {"type":"line", "interpolate": "monotone"},
   "encoding": {
     "x": {"timeUnit": "year", 
-            "field": "date"},
+            "field": "date", "type": "temporal"},
     "y": {"aggregate": "count", 
-          "field": "country/territory",
-          "as" : "total cases"}
+          "field": "country/territory"}
   }, 
   "config": {
     "countTitle": "Total cases"}
 }
+
+
+
+
 
 
 
