@@ -1,3 +1,4 @@
+# country bar graph rank crime index 
 {
  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/Crime%20index%20by%20countries%202020.csv"},
   "mark": "bar",
@@ -12,17 +13,29 @@
 }
 
 
-
+# line graph - trend
 {
-  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/crime-trends-and-operations-of-criminal-justice-systems-un-cts-csv-1.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv"},
   "mark": "line",
   "encoding": {
     "x": {"timeUnit": "year", 
             "field": "date"},
     "y": {"aggregate": "count", 
-          "field": "country/territory"}
-  }
+          "field": "country/territory",
+          "as" : "total cases"}
+  }, 
+  "config": {
+    "countTitle": "Total cases"}
 }
+
+
+
+
+
+
+
+
+
 
 
 
