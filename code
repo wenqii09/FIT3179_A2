@@ -27,7 +27,19 @@
   "config": {
     "countTitle": "Total cases"}
 }
+----- OR----
+{
+  "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv"},
 
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "date"},
+    "y": {
+      "aggregate": "mean", "field": "sexual.violence",
+      "title": "total cases"
+    }
+  }
+}
 
 
 
