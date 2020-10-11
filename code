@@ -15,6 +15,27 @@
 
 # line graph - trend
 {
+  "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv" },
+  "transform": [
+    {
+      "aggregate": [{
+       "op": "sum",
+       "field": "sexual.violence",
+       "as": "total cases"
+      }],
+      "groupby": ["date"]
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": { "field": "date"},
+    "y": { "field": "total cases", "type": "quantitative" }
+  }
+}
+
+__________________________________________________________________________________________________________
+# useless, in case need
+{
   "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv"},
   
   "mark": {"type":"line", "interpolate": "monotone"},
@@ -35,8 +56,8 @@
   "encoding": {
     "x": {"field": "date"},
     "y": {
-      "aggregate": "mean", "field": "sexual.violence",
-      "title": "total cases"
+      "aggregate": "sum", "field": "sexual.violence",
+      "title": "total cases", "type": "quantitative"
     }
   }
 }
