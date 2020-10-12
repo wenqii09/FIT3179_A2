@@ -108,6 +108,54 @@
 
 
 
+# bar chart --> age group
+
+{
+  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/gender.csv"},
+
+    "width": 210,
+    "height": 220,
+
+
+  "mark": {"type" :"bar", "tooltip": true},
+
+  "encoding": {
+
+    "y": {
+      "field": "percentage",
+      "title": "percentage (%)",
+      "type": "quantitative",
+      "axis": {"grid": false}
+    },
+
+    "x": {
+      "field": "age",
+      "axis": {"title": "age group"}
+
+    },
+
+    "size": {
+      "value": 35}, 
+
+    "color": {
+      "field": "gender",
+      "scale": {"range": ["#675193", "#ca8861"]}
+    }
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"domainWidth": 1}
+  }
+}
+
+
+
+
+
+
+
+
+
 
 __________________________________________________________________________________________________________
 # useless, in case need
