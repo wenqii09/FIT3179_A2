@@ -18,9 +18,9 @@
   "transform": [
     {
       "aggregate": [{
-       "op": "mean",
-       "field": "rate",
-       "as": "mean crime rate"
+       "op": "sum",
+       "field": "sexual.violence",
+       "as": "mean values"
       }],
       "groupby": ["country.territory"]
     }
@@ -33,7 +33,7 @@
     "type": "ordinal", "title": "country",
     "sort": "-x"},
 
-    "x": { "field": "mean crime rate", 
+    "x": { "field": "mean values", 
     "type": "quantitative" }
   }
 }
