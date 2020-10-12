@@ -56,6 +56,8 @@
 # line graph - trend
 {
   "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv" },
+  "width": 500,
+  "height": 300,
   "transform": [
     {
       "aggregate": [{
@@ -66,9 +68,9 @@
       "groupby": ["date"]
     }
   ],
-  "mark": "line",
+  "mark": {"type":"line", "tooltip": true},
   "encoding": {
-    "x": { "field": "date"},
+    "x": { "field": "date", "title": "year"},
     "y": { "field": "total cases", "type": "quantitative" }
   }
 }
