@@ -37,6 +37,19 @@
     "type": "quantitative" }
   }
 }
+--------------------------------
+{
+ "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/3179_a2%5Crate.csv"},
+  "mark": "bar",
+  "encoding": {
+    "y": {"field": "Country",
+            "type": "ordinal", 
+            "sort": "-x"},
+    "x": {"field": "Value",
+        "type": "quantitative"
+        }
+  }
+}
 
 
 
