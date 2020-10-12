@@ -74,6 +74,41 @@
     "y": { "field": "total cases", "type": "quantitative" }
   }
 }
+
+
+
+# pie chart - type of crime in sweden 
+{
+  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/typecrime.csv"},
+    "width": 400,
+    "height": 200,
+  "mark": {"type": "arc","tooltip": true},
+  "encoding": {
+    "color": {"field": "type", "type": "nominal", "title": "Crime Type"},
+    "theta": {"field": "count", "type": "quantitative"}
+  },
+  "view": {"stroke": null}
+}
+
+------------------- OR DONUT CHART ---------------
+
+{
+  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/typecrime.csv"},
+  "width": 400,
+    "height": 200,
+  "mark": {"type": "arc", "innerRadius": 50, "tooltip": true},
+  "encoding": {
+    "color": {"field": "type", "type": "nominal", "title": "crime type"},
+    "theta": {"field": "count", "type": "quantitative"}
+  },
+  "view": {"stroke": null}
+}
+
+
+
+
+
+
 __________________________________________________________________________________________________________
 # useless, in case need
 {
@@ -102,6 +137,30 @@ ________________________________________________________________________________
     }
   }
 }
+----------------------
+# pie 
+{
+  "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/typecrime.csv"
+  },
+  "width": 400,
+    "height": 300,
+  "encoding": {
+    "color": {"field": "type", "type": "nominal", "title": "Crime Type"},
+    "theta": {"field": "count", "type": "quantitative", "stack": true}
+    
+  },
+
+  "layer": [{
+    "mark": {"type": "arc", "outerRadius": 100, "tooltip": true}
+  }, {
+    "mark": {"type": "text", "radius": 120},
+    "encoding": {
+      "text": {"field": "type", "type": "nominal"}
+    }
+  }],
+  "view": {"stroke": null}
+}
+
 
 
 
