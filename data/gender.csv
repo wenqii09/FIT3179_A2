@@ -1,0 +1,85 @@
+"","Country","Rank","Area.km2","Area.mi2","Population","Density.pop..km2","Density.pop..mi2","Date","Population.source","Value"
+"1","Albania","84","28,703","11,082","28,62,427","100","259","January 1, 2019","Official annual estimate",559
+"2","Algeria","168","23,81,741","9,19,595","4,30,00,000","18","47","January 1, 2019","Official Projection",23262
+"3","Argentina","173","27,80,400","10,73,518","4,49,38,712","16","41","July 1, 2019","Annual official estimate",21161
+"4","Armenia","87","29,743","11,484","29,57,500","99","256","September 30, 2019","Official quarterly estimate",473
+"5","Australia","192","76,92,024","29,69,907","2,56,49,909","3","9","March 18, 2020","Official estimate",24770
+"6","Austria","76","83,879","32,386","89,02,600","106","275","January 1, 2020","Official quarterly estimate",14722
+"7","Azerbaijan","72","86,600","33,436","1,00,67,108","116","300","January 1, 2020","Official publication",908
+"8","Bahamas","150","13,940","5,382","3,86,870","28","73","July 1, 2018","Official Projection",3229
+"9","Bahrain","4","778","300","15,43,300","1,983","5,136","July 1, 2019","Official annual projection",320
+"10","Barbados","9","430","166","2,87,025","668","1,730","July 1, 2019","UN projection",174
+"11","Belarus","133","2,07,600","80,155","94,65,300","46","119","April 1, 2019","Quarterly official estimate",3884
+"12","Belgium","22","30,689","11,849","1,15,24,454","376","974","January 1, 2020","Official monthly estimate",50962
+"13","Belize","170","22,965","8,867","3,98,050","17","44","July 1, 2018","Official annual estimate",453
+"14","Bosnia and Herzegovina","114","51,209","19,772","35,11,372","69","179","July 1, 2016","Official estimate",749
+"15","Brazil","154","85,15,767","32,87,956","21,12,70,518","25","64","March 18, 2020","Official population clock",219035
+"16","Bulgaria","119","1,11,002","42,858","70,00,039","63","163","December 31, 2018","Official annual estimate",7994
+"17","Burundi","20","27,816","10,740","1,12,15,578","403","1,044","July 1, 2020","Official annual projection",2662
+"18","Canada","187","99,84,670","38,55,103","3,79,61,548","4","10","March 18, 2020","Official estimate",231268
+"19","Chile","158","7,56,096","2,91,930","1,73,73,831","23","60","August 31, 2017","Preliminary 2017 census result",75224
+"20","Colombia","139","11,41,748","4,40,831","4,62,02,800","40","105","March 18, 2020","Official population clock",52147
+"21","Costa Rica","86","51,100","19,730","50,58,007","99","256","June 30, 2019","Official estimate",35474
+"22","Croatia","109","56,542","21,831","40,87,843","72","186","July 1, 2018","Annual official estimate",5494
+"23","Cyprus","57","5,896","2,276","8,75,900","149","386","December 31, 2018","Official estimate",809
+"24","Czech Republic","63","78,867","30,451","1,06,81,161","135","350","September 30, 2019","Official quarterly estimate",16267
+"25","Egypt","83","10,02,450","3,87,048","10,01,38,465","100","259","March 18, 2020","Official population clock",1001
+"26","El Salvador","26","21,040","8,124","67,04,864","319","826","July 1, 2019","Official annual projection",6186
+"27","Estonia","148","45,339","17,505","13,24,820","29","75","January 1, 2019","Official estimate",2418
+"28","Finland","172","3,38,424","1,30,666","55,27,405","16","41","December 20, 2019","Official monthly estimate",21099
+"29","France","68","5,43,965","2,10,026","6,70,60,000","123","319","December 1, 2019","Monthly official estimate",216137
+"30","Georgia","123","69,700","26,911","37,29,600","54","140","January 1, 2018","Official estimate",1236
+"31","Germany","41","3,57,168","1,37,903","8,31,49,300","233","603","September 30, 2019","Official quarterly estimate",475468
+"32","Greece","98","1,31,957","50,949","1,07,24,599","81","210","January 1, 2019","Official estimate",6451
+"33","Grenada","27","344","133","1,08,825","316","818","July 1, 2019","UN projection",935
+"34","Guatemala","54","1,08,889","42,042","1,76,79,735","162","420","July 1, 2019","Official annual projection",1843
+"35","Guinea","127","2,45,857","94,926","1,22,18,357","50","129","July 1, 2019","Official Projection",33
+"36","Guyana","189","2,14,999","83,012","7,82,225","3.6","9.3","July 1, 2018","UN projection",1289
+"37","Honduras","96","1,12,492","43,433","91,58,345","81","210","July 1, 2019","Official Projection",3580
+"38","Hungary","78","93,029","35,919","97,64,000","105","272","January 1, 2019","Annual official estimate",6289
+"39","Iceland","191","1,02,775","39,682","3,60,390","3.5","9.1","June 30, 2019","Official estimate",1286
+"40","India","19","32,87,240","12,69,211","1,35,99,33,123","414","1,071","March 18, 2020","Population clock",479628
+"41","Ireland","112","70,273","27,133","49,21,500","70","181","April 1, 2019","Official annual estimate",13607
+"42","Israel","18","22,072","8,522","91,73,250","416","1,076","March 18, 2020","Official population clock",29245
+"43","Italy","51","3,01,308","1,16,336","6,02,52,824","200","518","August 31, 2019","Monthly official estimate",39194
+"44","Jamaica","36","10,991","4,244","27,26,667","248","642","December 31, 2018","Official estimate",9475
+"45","Japan","24","3,77,975","1,45,937","12,60,10,000","333","862","February 1, 2020","Monthly official estimate",87546
+"46","Kazakhstan","184","27,24,900","10,52,090","1,85,92,700","7","18","January 4, 2020","Official monthly estimate",2215
+"47","Kenya","94","5,81,834","2,24,647","4,75,64,296","82","212","August 31, 2019","2019 census result",27793
+"48","Kuwait","35","17,818","6,880","44,20,110","248","642","January 1, 2019","Official estimate",2538
+"49","Kyrgyzstan","146","1,99,945","77,199","63,09,300","32","83","June 1, 2018","Official estimate",182
+"50","Lithuania","138","65,300","25,212","27,93,466","43","111","November 1, 2019","Monthly official estimate",4096
+"51","Luxembourg","38","2,586","998","6,13,894","237","614","January 1, 2019","Official estimate",1998
+"52","Maldives","6","298","115","3,74,775","1,258","3,258","December 31, 2018","Official estimate",807
+"53","Mauritius","10","2,040","788","12,65,577","620","1,606","July 1, 2018","Official estimate",3466
+"54","Mexico","117","19,67,138","7,59,516","12,65,77,691","64","166","July 1, 2019","Official estimate",256262
+"55","Mongolia","194","15,64,100","6,03,902","30,00,000","1.9","4.9","January 24, 2015","Official estimate",2497
+"56","Montenegro","135","13,812","5,333","6,22,182","45","117","January 1, 2019","Official estimate",337
+"57","Morocco","102","4,46,550","1,72,414","3,58,42,238","80","208","March 18, 2020","Official population clock",12935
+"58","Mozambique","143","7,99,380","3,08,642","2,85,71,310","36","93","July 1, 2019","Official Projection",4144
+"59","Netherlands","16","41,526","16,033","1,74,45,781","420","1,088","March 18, 2020","Official population clock",59345
+"60","New Zealand","167","2,70,467","1,04,428","49,71,205","18","48","March 18, 2020","Official population clock",19894
+"61","Nicaragua","124","1,21,428","46,884","63,93,824","53","137","July 1, 2017","Official estimate",3626
+"62","Norway","171","3,23,808","1,25,023","53,67,580","17","44","January 1, 2020","Official quarterly estimate",20134
+"63","Oman","177","3,09,500","1,19,499","41,83,841","14","36","June 9, 2015","Weekly official estimate",315
+"64","Paraguay","169","4,06,752","1,57,048","70,52,983","17","44","July 1, 2018","Official Projection",17956
+"65","Philippines","23","3,00,000","1,15,831","10,84,20,484","361","936","March 18, 2020","Official population clock",9748
+"66","Poland","69","3,12,685","1,20,728","3,83,86,000","123","319","June 30, 2019","Official estimate",16319
+"67","Portugal","73","92,090","35,556","1,02,76,617","112","290","December 31, 2018","Official estimate",18020
+"68","Romania","97","2,38,391","92,043","1,94,05,156","81","210","January 1, 2019","Official annual estimate",3131
+"69","Saint Vincent and the Grenadines","31","389","150","1,10,520","284","736","July 1, 2018","Official estimate",1571
+"70","Serbia","93","77,474","29,913","69,01,188","89","231","July 1, 2019","Official estimate",3171
+"71","Sierra Leone","75","71,740","27,699","79,01,454","110","285","July 1, 2019","Official annual projection",1318
+"72","Singapore","2","722.5","279","57,03,600","7,894","20,445","July 1, 2019","Official estimate",8869
+"73","Slovakia","74","49,036","18,933","54,50,421","111","287","December 31, 2018","Official estimate",1485
+"74","Slovenia","80","20,273","7,827","20,84,301","103","267","January 1, 2019","Official quarterly estimate",2782
+"75","Solomon Islands","156","28,370","10,954","6,82,500","24","62","July 1, 2018","Official estimate",1015
+"76","Spain","89","5,05,990","1,95,364","4,69,34,632","93","241","July 1, 2019","Official estimate",52408
+"77","Sweden","159","4,50,295","1,73,860","1,03,65,705","23","60","March 18, 2020","Official population clock",121261
+"78","Switzerland","48","41,285","15,940","85,86,550","208","539","September 30, 2019","Official provisional figure",19090
+"79","Tajikistan","118","1,43,100","55,251","91,27,000","64","166","January 1, 2019","Official estimate",1088
+"80","Trinidad and Tobago","34","5,155","1,990","13,63,985","265","686","July 1, 2019","Official annual estimate",6199
+"81","Turkey","77","7,83,562","3,02,535","8,31,54,997","106","275","December 31, 2019","Annual official estimate",15977
+"82","Uganda","52","2,41,551","93,263","4,00,06,700","166","430","July 1, 2019","Annual official estimate",91108
+"83","Ukraine","113","6,03,000","2,32,820","4,19,02,416","69","179","January 1, 2020","Official monthly estimate",15150
+"84","Yemen","116","4,55,000","1,75,676","2,89,15,284","64","166","July 1, 2018","UN projection",278
