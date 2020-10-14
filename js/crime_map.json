@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Global Crime Rate",
+  "title": "Global Crime Rate (2003-2011)",
   "width": 600,
   "height": 400,
   "projection": {"type": "equirectangular"},
