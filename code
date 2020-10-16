@@ -21,7 +21,8 @@
 
 # line graph - trend
 {
-  "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv" },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv" },
   "width": 500,
   "height": 300,
   
@@ -29,7 +30,7 @@
     {
       "aggregate": [{
        "op": "sum",
-       "field": "sexual.violence",
+       "field": "sexual_violence",
        "as": "total cases"
       }],
       "groupby": ["date"]
@@ -47,13 +48,60 @@
 
 # pie chart - type of crime in sweden 
 {
-  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/typecrime.csv"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Crime Type in Sweden",
+  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/typecrime.csv"},
     "width": 400,
-    "height": 200,
-  "mark": {"type": "arc","tooltip": true},
+    "height": 250,
+  
+  "mark": {"type": "arc",
+          "outerRadius": 110,
+          "tooltip": true},
+
   "encoding": {
-    "color": {"field": "type", "type": "nominal", "title": "Crime Type"},
-    "theta": {"field": "count", "type": "quantitative"}
+    "color": {"field": "type", 
+    "type": "nominal", 
+    "title": "Crime Type"},
+
+    "theta": {"field": "count", 
+    "type": "quantitative",
+    "title": "Crime Count"
+    }
+  },
+  "view": {"stroke": null}
+}
+
+
+-------------- with wording outside pie -----------
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Crime Type in Sweden",
+  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/typecrime.csv"},
+    "width": 400,
+    "height": 250,
+      
+  "layer": [{
+  "mark": {"type": "arc",
+          "outerRadius": 110,
+          "tooltip": true}
+  },
+  {
+    "mark": {"type": "text", "radius": 120},
+    "encoding": {
+      "text": {"field": "type", "type": "nominal"}
+    }
+  }
+  ],
+
+  "encoding": {
+    "color": {"field": "type", 
+    "type": "nominal", 
+    "title": "Crime Type"},
+
+    "theta": {"field": "count", 
+    "type": "quantitative",
+    "title": "Crime Count"
+    }
   },
   "view": {"stroke": null}
 }
@@ -61,10 +109,13 @@
 ------------------- OR DONUT CHART ---------------
 
 {
-  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/typecrime.csv"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Crime Type in Sweden",
+  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/typecrime.csv"},
   "width": 400,
-    "height": 200,
-  "mark": {"type": "arc", "innerRadius": 50, "tooltip": true},
+    "height": 300,
+  "mark": {"type": "arc", "outerRadius": 120,
+          "innerRadius": 50, "tooltip": true},
   "encoding": {
     "color": {"field": "type", "type": "nominal", "title": "crime type"},
     "theta": {"field": "count", "type": "quantitative"}
@@ -79,10 +130,13 @@
 # bar chart --> age group
 
 {
-  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/gender.csv"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Victim's Age in Sweden (Age)",
+  
+  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/gender.csv"},
 
-    "width": 210,
-    "height": 220,
+    "width": 350,
+    "height": 280,
 
 
   "mark": {"type" :"bar", "tooltip": true},
@@ -91,14 +145,14 @@
 
     "y": {
       "field": "percentage",
-      "title": "percentage (%)",
+      "title": "Percentage (%)",
       "type": "quantitative",
       "axis": {"grid": false}
     },
 
     "x": {
       "field": "age",
-      "axis": {"title": "age group"}
+      "axis": {"title": "Age Group", "labelAngle": 0}
 
     },
 
@@ -107,6 +161,7 @@
 
     "color": {
       "field": "gender",
+      "title": "Gender",
       "scale": {"range": ["#675193", "#ca8861"]}
     }
   },
