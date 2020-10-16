@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Crime cases over Years",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"
+  },
+  "width": 500,
+  "height": 300,
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "sexual_violence",
+          "as": "Total Cases (per population)"
+        }
+      ],
+      "groupby": ["date"]
+    }
+  ],
+  "mark": {"type": "line", "point": true, "tooltip": true},
+  "encoding": {
+    "x": {"field": "date", "title": "year"},
+    "y": {
+      "field": "Total Cases (per population)",
+      "type": "quantitative",
+      "axis": {"grid": false}
+    }
+  },
+  "config": {}
+}
