@@ -1,94 +1,20 @@
 # country bar graph rank crime index 
 {
- "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/Crime%20index%20by%20countries%202020.csv"},
-  "mark": "bar",
-  "encoding": {
-    "y": {"field": "Country",
-            "type": "ordinal", 
-            "sort": "-x"},
-    "x": {"field": "Crime Index",
-        "type": "quantitative"
-        }
-  }
-}
---------------------
-
-{
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A bar chart that sorts the y-values by the x-values.",
-  
-  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"},
-  "height": {"step": 17},
-  "mark": "bar",
-
-  "transform": [
-    {
-      "aggregate": [{
-       "op": "sum",
-       "field": "sexual.violence",
-       "as": "values"
-      }],
-      "groupby": ["country.territory"]
-    }
-  ],
-
-  "encoding": {
-    "y": {
-      "field": "country",
-      "type": "ordinal",
-      "sort": "-x"
-    },
-    "x": {
-      "aggregate": "sum",
-      "field": "sexual.violence",
-      "title": "total"
-    }
-  }
-}
---------------------------------------------
-{
-  "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv" },
-
-  "transform": [
-    {
-      "aggregate": [{
-       "op": "sum",
-       "field": "sexual.violence",
-       "as": "mean values"
-      }],
-      "groupby": ["country.territory"]
-    }
-  ],
-
-  "mark": "bar",
-
-  "encoding": {
-    "y": { "field": "country.territory", 
-    "type": "ordinal", "title": "country",
-    "sort": "-x"},
-
-    "x": { "field": "mean values", 
-    "type": "quantitative" }
-  }
-}
---------------------------------
-
-{
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A bar chart showing the US population distribution of age groups in 2000.",
+  "title": "Global Crime Rate Rank over Years",
+  "width": 450,
   "height": {"step": 17},
-
-  "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"},
-
-  "mark": "bar",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"
+  },
+  "mark": { "type": "bar", "tooltip": true},
   "encoding": {
-    "y": {"field": "Country",
-    "sort": "-x"},
-    "x": {
-      "aggregate": "sum", "field": "sexual_violence",
-      "title": "suicides numbers"
-    }
-  }
+    "y": {"field": "Country", "sort": "-x"},
+    "x": {"aggregate": "sum", "field": "rate",
+     "title": "Crime Rate",
+     "axis": {"grid": false}}
+  },
+  "config": {}
 }
 
 
@@ -290,6 +216,80 @@ ________________________________________________________________________________
   }],
   "view": {"stroke": null}
 }
+--------------- bar ------------
+{
+ "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/Crime%20index%20by%20countries%202020.csv"},
+  "mark": "bar",
+  "encoding": {
+    "y": {"field": "Country",
+            "type": "ordinal", 
+            "sort": "-x"},
+    "x": {"field": "Crime Index",
+        "type": "quantitative"
+        }
+  }
+}
+--------------------
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A bar chart that sorts the y-values by the x-values.",
+  
+  "data": {"url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"},
+  "height": {"step": 17},
+  "mark": "bar",
+
+  "transform": [
+    {
+      "aggregate": [{
+       "op": "sum",
+       "field": "sexual.violence",
+       "as": "values"
+      }],
+      "groupby": ["country.territory"]
+    }
+  ],
+
+  "encoding": {
+    "y": {
+      "field": "country",
+      "type": "ordinal",
+      "sort": "-x"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "sexual.violence",
+      "title": "total"
+    }
+  }
+}
+--------------------------------------------
+{
+  "data": { "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/trend.csv" },
+
+  "transform": [
+    {
+      "aggregate": [{
+       "op": "sum",
+       "field": "sexual.violence",
+       "as": "mean values"
+      }],
+      "groupby": ["country.territory"]
+    }
+  ],
+
+  "mark": "bar",
+
+  "encoding": {
+    "y": { "field": "country.territory", 
+    "type": "ordinal", "title": "country",
+    "sort": "-x"},
+
+    "x": { "field": "mean values", 
+    "type": "quantitative" }
+  }
+}
+--------------------------------
 
 
 
