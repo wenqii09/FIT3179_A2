@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Victim's Age in Sweden (Age)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/gender.csv"
+  },
+  "width": 350,
+  "height": 280,
+  "mark": {"type": "bar", "tooltip": true},
+  "encoding": {
+    "y": {
+      "field": "percentage",
+      "title": "Percentage (%)",
+      "type": "quantitative",
+      "axis": {"grid": false}
+    },
+    "x": {"field": "age", "axis": {"title": "Age Group", "labelAngle": 0}},
+    "size": {"value": 35},
+    "color": {
+      "field": "gender",
+      "title": "Gender",
+      "scale": {"range": ["#675193", "#ca8861"]}
+    }
+  },
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
+}
