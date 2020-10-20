@@ -1,14 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Global Crime Rank",
+  "title": "Global Crime Rate Rank over Years",
+  "width": 450,
   "height": {"step": 17},
   "data": {
     "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"
   },
-  "mark": "bar",
+  "mark": { "type": "bar", "tooltip": true},
   "encoding": {
     "y": {"field": "Country", "sort": "-x"},
-    "x": {"aggregate": "sum", "field": "rate", "title": "suicides numbers"}
+    "x": {"aggregate": "sum", "field": "rate",
+     "title": "Crime Rate",
+     "axis": {"grid": false}}
   },
   "config": {}
 }
