@@ -1,20 +1,37 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Global Crime Rate per 100,000 Population Rank",
+  "title": "Global Crime Rate Rank",
   "width": 450,
   "height": {"step": 17},
   "data": {
     "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"
   },
-  "mark": {"type": "bar", "tooltip": true},
+  "layer": [
+  {"mark": {"type": "bar", "tooltip": true}, 
   "encoding": {
     "y": {"field": "Country", "sort": "-x"},
     "x": {
       "aggregate": "sum",
       "field": "rate",
-      "title": "Crime Rate", "format": ".2f",
+      "title": "Crime Rate",
+      "format": ".2f",
       "axis": {"grid": false}
     }
-  },
+  }
+  }, 
+  {
+    "mark": {
+      "type": "text",
+      "align": "left",
+      "dy": 100
+    },
+    "encoding": {
+      "text": {"aggregate": "sum",
+      "field": "rate",
+      "title": "Crime Rate",
+      "format": ".2f"}
+    }
+  }
+  ],
   "config": {}
 }
