@@ -95,7 +95,7 @@
       "layer": [
         {
      
-      "mark": {"type": "geoshape"},
+      "mark": {"type": "geoshape", "stroke": "white"},
       "encoding": {
         "color": {
           "field": "Value",
