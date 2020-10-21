@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Global Crime Rate Per 100,000 Population (2003-2011)",
+  "title": "Global Crime Rate per 100,000 Population (2003-2011)",
   "width": 700,
   "height": 500,
   "projection": {"type": "equirectangular"},
@@ -100,7 +100,7 @@
         "color": {
           "field": "Value",
           "type": "quantitative",
-          "title": "Crime Rate Per 100,000 Population ",
+          "title": "Crime Rate per 100,000 Population ",
           "scale": {
             "type": "threshold",
             "domain": [100, 300, 700, 1000],
