@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Global Crime Rate Rank",
+  "title": "Global Crime Rate per 100,000 Population Rank",
   "width": 450,
   "height": {"step": 17},
   "data": {
