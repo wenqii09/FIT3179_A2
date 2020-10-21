@@ -1,37 +1,68 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Global Crime Rate Rank",
+  "title": "Global Crime Rate Rank (2003-2011)",
   "width": 450,
   "height": {"step": 17},
   "data": {
-    "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"
+    "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/continent.csv"
   },
-  "layer": [
-  {"mark": {"type": "bar", "tooltip": true}, 
-  "encoding": {
-    "y": {"field": "Country", "sort": "-x"},
-    "x": {
-      "aggregate": "sum",
-      "field": "rate",
-      "title": "Crime Rate",
-      "format": ".2f",
-      "axis": {"grid": false}
+  
+  "params": [
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [null, "Europe", "Americas", "Asia", "Oceania", "Africa"],
+        "labels": [
+          "Show All",
+          "Europe",
+          "Americas",
+          "Asia",
+          "Oceania",
+          "Africa"
+        ],
+        "name": "Continent Selection: "
+      }
     }
-  }
-  }, 
-  {
-    "mark": {
-      "type": "text",
-      "align": "left",
-      "dy": 100
+  
+  ],
+
+  "transform": [
+    {
+      "filter": "Continent_selection == null || datum.Continent == Continent_selection"
     },
-    "encoding": {
-      "text": {"aggregate": "sum",
-      "field": "rate",
-      "title": "Crime Rate",
-      "format": ".2f"}
+    {
+      "aggregate": [
+        {"op": "sum", "field": "Crime Rate", "as": "Crime Rate"}
+      ],
+      "groupby": ["Country"]
     }
-  }
+    ],
+
+  "layer": [
+    {
+      "mark": {"type": "bar", "tooltip": true},
+      "encoding": {
+        "y": {"field": "Country", "sort": "-x"},
+        "x": {
+          "type": "quantitative",
+          "field": "Crime Rate",
+          "format": ".2f",
+          "axis": {"grid": false}
+        }
+      }
+    },
+    
+    {
+      "mark": {"type": "text", "align": "left", "dy": 100},
+      "encoding": {
+        "text": {
+          "field": "Crime Rate",
+          "title": "Crime Rate",
+          "format": ".2f"
+        }
+      }
+    }
   ],
   "config": {}
 }
