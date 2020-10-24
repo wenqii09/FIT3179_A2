@@ -30,33 +30,30 @@
   "transform": [
     {
       "filter": "Continent_selection == null || datum.Continent == Continent_selection"
-    },
-    {
-      "aggregate": [
-        {"op": "sum", "field": "Crime Rate", "as": "Crime Rate"}
-      ],
-      "groupby": ["Country"]
     }
     ],
 
-  "layer": [
-    {
-      "mark": {"type": "bar", "tooltip": true},
+
       "encoding": {
         "y": {"field": "Country", "sort": "-x"},
         "x": {
-          "type": "quantitative",
+          "aggregate": "sum",
           "field": "Crime Rate",
-          "format": ".2f",
+          "title": "Crime Rate",
           "axis": {"grid": false}
         }
-      }
-    },
+      },
+      
+  "layer": [
+    {
+      "mark": {"type": "bar", "tooltip": true}
+    }, 
     
     {
-      "mark": {"type": "text", "align": "left", "dy": 100},
+      "mark": {"type": "text", "align": "left", "dx": 10},
       "encoding": {
         "text": {
+          "aggregate": "sum",
           "field": "Crime Rate",
           "title": "Crime Rate",
           "format": ".2f"
@@ -66,3 +63,18 @@
   ],
   "config": {}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
