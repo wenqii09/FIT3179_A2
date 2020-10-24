@@ -6,12 +6,20 @@
   },
   "width": 400,
   "height": 300,
-  "mark": {
+  "layer":[
+  {"mark": {
     "type": "arc",
     "outerRadius": 120,
     "innerRadius": 50,
     "tooltip": true
-  },
+  }},
+  {
+    "mark": {"type": "text", "radius": 140},
+    "encoding": {
+      "text": {"field": "type", "type": "nominal"}
+    }}
+    ],
+
   "encoding": {
     "color": {"field": "type", "type": "nominal", "title": "crime type"},
     "theta": {"field": "count", "type": "quantitative"}
