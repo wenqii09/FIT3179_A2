@@ -22,5 +22,7 @@
       "scale": {"range": ["#675193", "#ca8861"]}
     }
   },
-  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}, "axisY": {
+      "minExtent": 100
+    }}
 }
