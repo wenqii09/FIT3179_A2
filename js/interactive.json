@@ -77,7 +77,7 @@
         },
         "y": {"title": "Crime Type", "field": "crime type"}
       },
-      "width": 600,
+      "width": 500,
       "mark": {"type": "bar", "tooltip": true},
       "selection": {"click": {"encodings": ["color"], "type": "multi"}},
       "transform": [{"filter": {"selection": "brush"}}]
