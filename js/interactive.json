@@ -83,5 +83,27 @@
       "transform": [{"filter": {"selection": "brush"}}]
     }
   ],
-  "config": {}
+  
+  "config": {
+    "axisY": {
+      "minExtent": 100
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
