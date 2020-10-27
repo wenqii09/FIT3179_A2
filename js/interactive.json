@@ -41,8 +41,8 @@
           "axis": {"grid": false}
         }
       },
-      "width": 600,
-      "height": 400,
+      "width": 500,
+      "height": 350,
       "mark": {"type": "bar", "tooltip": true},
       "selection": {"brush": {"encodings": ["x"], "type": "interval"}},
       "transform": [{"filter": {"selection": "click"}}]
