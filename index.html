@@ -1,82 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Global Crime Rate | An Example</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
   <!-- Import vega-embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-  
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- custom style -->
+  <style>
+    *{
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    h1{
+      font-weight: 900;
+    }
+     body{
+       background-color: lightgray;
+     }
+     .page{
+       width: 1000px;    
+       background-color: white;   
+       margin: auto;
+       padding: 100px;
+       padding-top: 135px;
+    }
+    .vis-container{
+      width: 100%;
+    }
+    .description h2, h1{
+      margin-top:0px;
+    }
+    .description-right {
+      padding-left: 120px;
+    }
+    .description-left{
+      padding-right: 120px;
+    }
+    .pure-g{
+      margin-bottom: 125px;
+    }
+    .small-font{
+        font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Examples of Multiple Visualisations</h1>
-  
-<h2>First visualisation:</h2>
-<h3>The first visualisation is line chart.</h3>
-<div id="line_chart"></div>
-  
-<h2>2 visualisation:</h2>
-<h3>The first visualisation is choropleth map showing global crime rate per 10,000 population.</h3>
-<div id="choropleth_map"></div>
+ <div class="page">
 
-<h2>3 visualisation:</h2>  
-<h3>The second visualisation is bar chart showing the rank of global crime rate per 10,000 population.</h3>
-<div id="bar_chart"></div>
+   <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Global Crime Rate</h1>
+        <p>This page demonstrates Crime Rate around the world.</p>
+      </div>
+    </div>
+  <!-- end pure grid group -->
 
-<h2>4 visualisation:</h2>  
-<h3>The second visualisation is bar chart showing the rank of global crime rate per 10,000 population.</h3>
-<div id="interactive"></div>
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <div class="description description-left">
+          <h2>line chart</h2>
+          <p>heres a line chart</p>
+        </div>
+      </div>
+      <div class="pure-u-2-3">
+        <div id="vis1"  class="vis-container"></div>
+      </div>
+    
+    </div>
   
-<h2>5 visualisation:</h2>  
-<h3>The second visualisation is bar chart showing the rank of global crime rate per 10,000 population.</h3>
-<div id="stackedbar_chart"></div>
-  
-  
+   
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div id="vis2"  class="vis-container"></div>
+        </div>
+        <div class="pure-u-1-2">
+          <div class="description description-right">
+            <div id="vis3"  class="vis-container"></div>
+          </div>
+        </div>
+      
+    </div>
+    <!-- end pure grid group -->
+
+   <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>map and bar chart</h1>
+        <p>here shows a map and bar chart</p>
+      </div>
+    </div>
+  <!-- end pure grid group -->
+   
+   
+   
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <div class="description description-left">
+          <h2>interactive chart</h2>
+          <p>interactive chart is here.</p>
+        </div>
+      </div>
+      <div class="pure-u-2-3">
+        <div id="vis4"  class="vis-container"></div>
+      </div>
+    
+    </div>
+
+     <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <div class="description description-left">
+          <h2>stacked bar chart</h2>
+          <p>stacked bar  chart is here.</p>
+        </div>
+      </div>
+      <div class="pure-u-2-3">
+        <div id="vis5"  class="vis-container"></div>
+      </div>
+    
+    </div>
+   
+   
+   
 <script type="text/javascript">
-  var vis1 = "js/line_chart_year.json";
+  var specVis1 = "js/line_chart_year.json";
+  var specVis2= "js/filter_map.json";
+  var specVis3= "js/bar_rank.json";
+  var specVis4= "js/interactive.json";
+  var specVis5= "js/stacked_bar_age.json";
   
-  vegaEmbed('#line_chart', vis1).then(function(result) {
+  vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var vis2 = "js/filter_map.json";
-  
-  vegaEmbed('#choropleth_map', vis2).then(function(result) {
+   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-  
-  var vis3 = "js/bar_rank.json";
-  
-  vegaEmbed('#bar_chart', vis3).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-  var vis4 = "js/interactive.json";
-  
-  vegaEmbed('#interactive', vis4).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-  var vis5 = "js/stacked_bar_age.json";
-  
-  vegaEmbed('#stackedbar_chart', vis5).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
 
+  vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
