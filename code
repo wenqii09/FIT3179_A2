@@ -19,17 +19,22 @@
 <h3>The first visualisation is line chart.</h3>
 <div id="line_chart"></div>
   
-<h2>First visualisation:</h2>
+<h2>2 visualisation:</h2>
 <h3>The first visualisation is choropleth map showing global crime rate per 10,000 population.</h3>
 <div id="choropleth_map"></div>
 
-<h2>Second visualisation:</h2>  
+<h2>3 visualisation:</h2>  
 <h3>The second visualisation is bar chart showing the rank of global crime rate per 10,000 population.</h3>
 <div id="bar_chart"></div>
 
-
+<h2>4 visualisation:</h2>  
+<h3>The second visualisation is bar chart showing the rank of global crime rate per 10,000 population.</h3>
+<div id="interactive"></div>
   
-
+<h2>5 visualisation:</h2>  
+<h3>The second visualisation is bar chart showing the rank of global crime rate per 10,000 population.</h3>
+<div id="stackedbar_chart"></div>
+  
   
 <script type="text/javascript">
   var vis1 = "js/line_chart_year.json";
@@ -50,18 +55,21 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
+  var vis4 = "js/interactive.json";
   
+  vegaEmbed('#interactive', vis4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var vis5 = "js/stacked_bar_age.json";
+  
+  vegaEmbed('#stackedbar_chart', vis5).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
 </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 
