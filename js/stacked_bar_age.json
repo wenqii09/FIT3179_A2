@@ -23,6 +23,6 @@
     }
   },
   "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}, "axisY": {
-      "minExtent": 100
+      "minExtent": 80
     }}
 }
