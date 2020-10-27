@@ -31,8 +31,7 @@
           "Mexico",
           "New Zealand",
           "Russia",
-          "Sweden",
-          "Uganda"
+          "Sweden"
         ],
         "labels": [
           "Show All",
@@ -45,8 +44,7 @@
           "Mexico",
           "New Zealand",
           "Russia",
-          "Sweden",
-          "Uganda"
+          "Sweden"
         ],
         "name": "Country Selection: "
       }
@@ -131,7 +129,7 @@
             "x": "width",
             "text": "Grey",
             "color": "#999999",
-            "fontSize": 14,
+            "fontSize": 12,
             "fontStyle": "bold"
           }
         },
@@ -140,11 +138,11 @@
             "type": "text",
             "align": "left",
             "baseline": "top",
-            "dx": 17,
+            "dx": 10,
             "dy": 65,
             "x": "width",
             "text": "coloured countries ",
-            "fontSize": 14,
+            "fontSize": 12,
             "fontStyle": "bold"
           }
         },
@@ -157,7 +155,7 @@
             "dy": 82,
             "x": "width",
             "text": "have no data due to ",
-            "fontSize": 14,
+            "fontSize": 12,
             "fontStyle": "bold"
           }
         },
@@ -170,7 +168,7 @@
             "dy": 99,
             "x": "width",
             "text": "dataset limitations.",
-            "fontSize": 14,
+            "fontSize": 12,
             "fontStyle": "bold"
           }
         }, 
@@ -179,11 +177,11 @@
             "type": "text",
             "align": "left",
             "baseline": "top",
-            "dx": 704,
-            "dy": 92,
+            "dx": 459,
+            "dy": 62,
             "x": "width",
             "text": "Australia",
-            "fontSize": 10
+            "fontSize": 8
           }
         }, 
         {
@@ -191,11 +189,11 @@
             "type": "text",
             "align": "left",
             "baseline": "top",
-            "dx": 395,
-            "dy": -171,
+            "dx": 257,
+            "dy": -113,
             "x": "width",
             "text": "Sweden",
-            "fontSize": 10
+            "fontSize": 8
           }
         }, 
         {
@@ -203,11 +201,11 @@
             "type": "text",
             "align": "left",
             "baseline": "top",
-            "dx": 20,
-            "dy": -110,
+            "dx": 8,
+            "dy": -77,
             "x": "width",
             "text": "United States",
-            "fontSize": 10
+            "fontSize": 8
           }
         }, 
         {
@@ -215,11 +213,11 @@
             "type": "text",
             "align": "left",
             "baseline": "top",
-            "dx": 20,
-            "dy": -98,
+            "dx": 8,
+            "dy": -65,
             "x": "width",
             "text": "of America",
-            "fontSize": 10
+            "fontSize": 8
           }
         }, 
         {
@@ -227,11 +225,83 @@
             "type": "text",
             "align": "left",
             "baseline": "top",
-            "dx": 697,
-            "dy": -200,
+            "dx": 387,
+            "dy": -135,
             "x": "width",
             "text": "Russia",
-            "fontSize": 10
+            "fontSize": 8
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": 205,
+            "dy": 25,
+            "x": "width",
+            "text": "Brazil",
+            "fontSize": 8
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": 471,
+            "dy": -55,
+            "x": "width",
+            "text": "China",
+            "fontSize": 8
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": 402,
+            "dy": -10,
+            "x": "width",
+            "text": "Malaysia",
+            "fontSize": 8
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": 60,
+            "dy": -140,
+            "x": "width",
+            "text": "Canada",
+            "fontSize": 8
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": 57,
+            "dy": -40,
+            "x": "width",
+            "text": "Mexico",
+            "fontSize": 8
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": 517,
+            "dy": 80,
+            "x": "width",
+            "text": "New Zealand",
+            "fontSize": 8
           }
         }
       ]
