@@ -41,7 +41,7 @@
           "axis": {"grid": false}
         }
       },
-      "width": 450,
+      "width": 350,
       "height": 300,
       "mark": {"type": "bar", "tooltip": true},
       "selection": {"brush": {"encodings": ["x"], "type": "interval"}},
@@ -77,7 +77,7 @@
         },
         "y": {"title": "Crime Type", "field": "crime type"}
       },
-      "width": 450,
+      "width": 350,
       "mark": {"type": "bar", "tooltip": true},
       "selection": {"click": {"encodings": ["color"], "type": "multi"}},
       "transform": [{"filter": {"selection": "brush"}}]
