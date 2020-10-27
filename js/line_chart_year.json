@@ -20,7 +20,7 @@
   ],
   "mark": {"type": "line", "point": true, "tooltip": true},
   "encoding": {
-    "x": {"field": "date", {"title": "year", "labelAngle": 0}},
+    "x": {"field": "date", "axis": {"title": "year", "labelAngle": 0}},
     "y": {
       "field": "Total Cases (per population)",
       "type": "quantitative",
