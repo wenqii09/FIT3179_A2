@@ -4,8 +4,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"
   },
-  "width": 500,
-  "height": 300,
+  "width": 450,
+  "height": 250,
   "transform": [
     {
       "aggregate": [
