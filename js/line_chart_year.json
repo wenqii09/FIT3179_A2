@@ -28,5 +28,7 @@
       "axis": {"grid": false}
     }
   },
-  "config": {}
+  "config": {"axisY": {
+      "minExtent": 100
+    }}
 }
