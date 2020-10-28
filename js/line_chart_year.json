@@ -25,10 +25,8 @@
       "mark": {
             "type": "text",
             "align": "left",
-            "baseline": "top",
             "dx": -10,
             "dy": 125,
-            "x": "width",
             "text": "There is an obvious increasing",
             "fontSize": 9.5
           },
@@ -44,10 +42,8 @@
       "mark": {
             "type": "text",
             "align": "left",
-            "baseline": "top",
             "dx": -10,
             "dy": 137,
-            "x": "width",
             "text": "trend since 2003 until 2007 and",
             "fontSize": 9.5
           },
@@ -63,10 +59,8 @@
       "mark": {
             "type": "text",
             "align": "left",
-            "baseline": "top",
             "dx": -10,
             "dy": 149,
-            "x": "width",
             "text": "only a slight changes from 2007 to",
             "fontSize": 9.5
           },
@@ -82,10 +76,8 @@
       "mark": {
             "type": "text",
             "align": "left",
-            "baseline": "top",
             "dx": -10,
             "dy": 162,
-            "x": "width",
             "text": "2010 decreases from 2010 to 2011",
             "fontSize": 9.5
           },
@@ -101,10 +93,8 @@
       "mark": {
             "type": "text",
             "align": "left",
-            "baseline": "top",
             "dx": 10,
             "dy": 2,
-            "x": "width",
             "text": "2003",
             "fontSize": 9
           },
@@ -120,10 +110,8 @@
       "mark": {
             "type": "text",
             "align": "left",
-            "baseline": "top",
             "dx": -160,
             "dy": -15,
-            "x": "width",
             "text": "2007",
             "fontSize": 9
           },
@@ -139,10 +127,8 @@
       "mark": {
             "type": "text",
             "align": "left",
-            "baseline": "top",
             "dx": 10,
             "dy": -4,
-            "x": "width",
             "text": "2010",
             "fontSize": 9
           },
@@ -158,10 +144,8 @@
       "mark": {
             "type": "text",
             "align": "left",
-            "baseline": "top",
             "dx": -6,
-            "dy": 5,
-            "x": "width",
+            "dy": 7,
             "text": "2011",
             "fontSize": 9
           },
@@ -188,14 +172,3 @@
       "minExtent": 80
     }}
 }
-
-
-
-
-
-
-
-
-
-
-
