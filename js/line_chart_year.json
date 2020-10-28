@@ -4,7 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"
   },
-  "width": 450,
+  "width": 500,
   "height": 250,
   "transform": [
     {
@@ -48,7 +48,7 @@
             "dx": -10,
             "dy": 137,
             "x": "width",
-            "text": "trend since 2003 until 2010 and",
+            "text": "trend since 2003 until 2007 and",
             "fontSize": 9.5
           },
       "encoding": {
@@ -67,7 +67,26 @@
             "dx": -10,
             "dy": 149,
             "x": "width",
-            "text": "decreases from 2010 to 2011",
+            "text": "only a slight changes from 2007 to",
+            "fontSize": 9.5
+          },
+      "encoding": {
+        "color": {"value": "grey"},
+        "opacity":{
+          "condition": {"test": "datum['date'] == 2006", "value": 1},
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -10,
+            "dy": 162,
+            "x": "width",
+            "text": "2010 decreases from 2010 to 2011",
             "fontSize": 9.5
           },
       "encoding": {
@@ -97,6 +116,25 @@
         }
       }
     }, 
+    {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -160,
+            "dy": -15,
+            "x": "width",
+            "text": "2007",
+            "fontSize": 9
+          },
+      "encoding": {
+        "color": {"value": "black"},
+        "opacity":{
+          "condition": {"test": "datum['date'] == 2010", "value": 1},
+          "value": 0
+        }
+      }
+    },  
     {
       "mark": {
             "type": "text",
