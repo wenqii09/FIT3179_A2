@@ -91,7 +91,7 @@
             "color": {
               "field": "Value",
               "type": "quantitative",
-              "title": "Crime Rate per 10,000 Population ",
+              "title": "Crime Rate ",
               "scale": {
                 "type": "threshold",
                 "domain": [100, 300, 700, 1000],
