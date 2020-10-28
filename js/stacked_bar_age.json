@@ -19,7 +19,7 @@
     "color": {
       "field": "gender",
       "title": "Gender",
-      "scale": {range:[#fed976, #0570b0]}
+      "scale":{"range":["#0868ac", "#fed976"]}
     }
   },
   "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}, "axisY": {
