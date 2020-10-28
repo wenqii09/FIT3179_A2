@@ -6,7 +6,29 @@
   },
   "width": 350,
   "height": 280,
-  "mark": {"type": "bar", "tooltip": true},
+
+  "layer":[
+  {"mark": {"type": "bar", "tooltip": true}},
+ {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 125,
+            "dy": 55,
+            "text": "Male > female (45-64) ",
+            "fontSize": 10
+          },
+      "encoding": {
+        "color": {"value": "grey"},
+        "opacity":{
+          "condition": {"test": "datum.percentage == 10.4", "value": 1},
+          "value": 0
+        }
+      }
+    }
+  ],
+
+
   "encoding": {
     "y": {
       "field": "percentage",
@@ -14,8 +36,7 @@
       "type": "quantitative",
       "axis": {"grid": false}
     },
-    "x": {"field": "age", "axis": {"title": "Age Group", "labelAngle": 0}},
-    "size": {"value": 35},
+    "x": {"field": "age", "axis": {"title": "Age Group", "labelAngle": 0}, "scale": {"padding": 0.55}},
     "color": {
       "field": "gender",
       "title": "Gender",
@@ -26,3 +47,12 @@
       "minExtent": 80
     }}
 }
+
+
+
+
+
+
+
+
+
