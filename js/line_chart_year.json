@@ -18,8 +18,126 @@
       "groupby": ["date"]
     }
   ],
-  "mark": {"type": "line", "point": true, "tooltip": true},
+  "layer":[
+  {"mark": {"type": "line", "point": true, "tooltip": true}}, 
+        
+    {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -10,
+            "dy": 125,
+            "x": "width",
+            "text": "There is an obvious increasing",
+            "fontSize": 9.5
+          },
+      "encoding": {
+        "color": {"value": "grey"},
+        "opacity":{
+          "condition": {"test": "datum['date'] == 2006", "value": 1},
+          "value": 0
+        }
+      }
+    }, 
+    {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -10,
+            "dy": 137,
+            "x": "width",
+            "text": "trend since 2003 until 2010 and",
+            "fontSize": 9.5
+          },
+      "encoding": {
+        "color": {"value": "grey"},
+        "opacity":{
+          "condition": {"test": "datum['date'] == 2006", "value": 1},
+          "value": 0
+        }
+      }
+    }, 
+    {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -10,
+            "dy": 149,
+            "x": "width",
+            "text": "decreases from 2010 to 2011",
+            "fontSize": 9.5
+          },
+      "encoding": {
+        "color": {"value": "grey"},
+        "opacity":{
+          "condition": {"test": "datum['date'] == 2006", "value": 1},
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": 10,
+            "dy": 2,
+            "x": "width",
+            "text": "2003",
+            "fontSize": 9
+          },
+      "encoding": {
+        "color": {"value": "black"},
+        "opacity":{
+          "condition": {"test": "datum['date'] == 2003", "value": 1},
+          "value": 0
+        }
+      }
+    }, 
+    {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": 10,
+            "dy": -4,
+            "x": "width",
+            "text": "2010",
+            "fontSize": 9
+          },
+      "encoding": {
+        "color": {"value": "black"},
+        "opacity":{
+          "condition": {"test": "datum['date'] == 2010", "value": 1},
+          "value": 0
+        }
+      }
+    }, 
+    {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -6,
+            "dy": 5,
+            "x": "width",
+            "text": "2011",
+            "fontSize": 9
+          },
+      "encoding": {
+        "color": {"value": "black"},
+        "opacity":{
+          "condition": {"test": "datum['date'] == 2011", "value": 1},
+          "value": 0
+        }
+      }
+    }
+        ],
   "encoding": {
+    
     "x": {"field": "date", "axis": {"title": "Year", "labelAngle": 0}, "title": "Year"},
     "y": {
       "field": "Total Cases (per population)",
@@ -32,3 +150,14 @@
       "minExtent": 80
     }}
 }
+
+
+
+
+
+
+
+
+
+
+
