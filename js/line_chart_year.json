@@ -1,10 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Crime cases over Years",
+  "background": "transparent",
   "data": {
     "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/trend.csv"
   },
-  "width": 430,
+  "width": 405,
   "height": 250,
   "transform": [
     {
