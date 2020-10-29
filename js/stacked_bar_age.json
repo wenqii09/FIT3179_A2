@@ -49,7 +49,7 @@
   "encoding": {
     "y": {
       "field": "percentage",
-      "title": "Percentage (%)",
+      "title": "Percentage of victim (%)",
       "type": "quantitative",
       "axis": {"grid": false}
     },
