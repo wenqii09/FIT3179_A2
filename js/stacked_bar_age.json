@@ -2,7 +2,82 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Victim's Age in Sweden (Age)",
   "data": {
+    "url": "https://raw.githubuserconte{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Victim's Age in Sweden (Age)",
+  "data": {
     "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/gender.csv"
+  },
+  "width": 350,
+  "height": 280,
+
+  "layer":[
+  {"mark": {"type": "bar", "tooltip": true}},
+ {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 125,
+            "dy": -25,
+            "text": "male > female",
+            "fontSize": 10.5
+          },
+      "encoding": {
+        "color": {"value": "grey"},
+        "opacity":{
+          "condition": {"test": "datum.percentage == 6.0", "value": 1},
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 132,
+            "dy": -14,
+            "text": "age 45-64",
+            "fontSize": 10.5
+          },
+      "encoding": {
+        "color": {"value": "grey"},
+        "opacity":{
+          "condition": {"test": "datum.percentage == 6.0", "value": 1},
+          "value": 0
+        }
+      }
+    }
+  ],
+
+
+  "encoding": {
+    "y": {
+      "field": "percentage",
+      "title": "Percentage (%)",
+      "type": "quantitative",
+      "axis": {"grid": false}
+    },
+    "x": {"field": "age", "axis": {"title": "Age Group", "labelAngle": 0}, "scale": {"padding": 0.55}},
+    "color": {
+      "field": "gender",
+      "title": "Gender",
+      "scale":{"range":["#4c78a8", "#f1cf5b"]}
+    }
+  },
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}, "axisY": {
+      "minExtent": 80
+    }}
+}
+
+
+
+
+
+
+
+
+
+nt.com/wenqii09/FIT3179_A2/main/data/gender.csv"
   },
   "width": 350,
   "height": 280,
