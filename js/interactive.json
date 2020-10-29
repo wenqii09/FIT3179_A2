@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Sweden Crime Cases, 2003-2011",
+  "title": {"text": "Sweden Crime Cases, 2003-2011", "anchor": "middle"},
   "data": {
     "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/type.csv"
   },
@@ -75,7 +75,9 @@
           "title": "Count of crime type",
           "axis": {"grid": false}
         },
-        "y": {"title": "Crime Type", "field": "crime type"}
+        "y": {"title": "Crime Type",
+        "sort": "-x",
+         "field": "crime type"}
       },
       "width": 350,
       "mark": {"type": "bar", "tooltip": true},
@@ -90,20 +92,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
