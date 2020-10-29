@@ -94,7 +94,7 @@
               "title": "Crime Rate ",
               "scale": {
                 "type": "threshold",
-                "domain": [100, 300, 700, 1000],
+                "domain": [20, 300, 700, 1000],
                 "range": ["#fdd0a2", "#fdae6b", "#fd8d3c", "#e6550d", "#a63603"]
               }
             },
