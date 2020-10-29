@@ -1,3 +1,4 @@
+
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {"text": "Sweden Crime Cases, 2003-2011", "anchor": "middle"},
@@ -5,6 +6,142 @@
     "url": "https://raw.githubusercontent.com/wenqii09/FIT3179_A2/main/data/type.csv"
   },
   "vconcat": [
+    {
+      "layer":[
+      {
+        "encoding": {
+          "color": {
+            "condition": {
+              "selection": "click",
+              "field": "crime type",
+              "scale": {
+                "domain": [
+                  "assault",
+                "burglary",
+                "fraud",
+                "murder",
+                "rape",
+                "robbery",
+                "sexual offences",
+                "stealing"
+                ],
+                "scheme": "tableau20"
+              }
+            },
+            "value": "lightgray"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "value",
+            "title": "Count of crime type",
+            "axis": {"grid": false}
+          },
+          "y": {"title": "Crime Type", 
+           "sort": "-x", "field": "crime type"}
+        },
+        "width": 350,
+        "mark": {"type": "bar", "tooltip": true},
+        "selection": {"click": {"encodings": ["color"], "type": "multi"}},
+        "transform": [{"filter": {"selection": "brush"}}]
+      },
+      {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -8,
+            "dy": -75,
+            "x": "width",
+            "text": "57,843",
+            "fontSize": 9
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -287,
+            "dy": -55,
+            "x": "width",
+            "text": "10,126",
+            "fontSize": 9
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -300,
+            "dy": -35,
+            "x": "width",
+            "text": "8,063",
+            "fontSize": 9
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -302,
+            "dy": -13,
+            "x": "width",
+            "text": "7,752",
+            "fontSize": 9
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -340,
+            "dy": 6,
+            "x": "width",
+            "text": "1,317",
+            "fontSize": 9
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -342,
+            "dy": 26,
+            "x": "width",
+            "text": "886",
+            "fontSize": 9
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -345,
+            "dy": 47,
+            "x": "width",
+            "text": "454",
+            "fontSize": 9
+          }
+        }, 
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "dx": -346,
+            "dy": 66,
+            "x": "width",
+            "text": "23",
+            "fontSize": 9
+          }
+        }
+      ]
+    },
     {
       "encoding": {
         "color": {
@@ -46,49 +183,7 @@
       "mark": {"type": "bar", "tooltip": true},
       "selection": {"brush": {"encodings": ["x"], "type": "interval"}},
       "transform": [{"filter": {"selection": "click"}}]
-    },
-    {
-      "encoding": {
-        "color": {
-          "condition": {
-            "selection": "click",
-            "field": "crime type",
-            "scale": {
-              "domain": [
-                "murder",
-                "assault",
-                "sexual offences",
-                "rape",
-                "stealing",
-                "burglary",
-                "robbery",
-                "fraud"
-              ],
-              "scheme": "tableau20"
-            }
-          },
-          "value": "lightgray"
-        },
-        "x": {
-          "aggregate": "sum",
-          "field": "value",
-          "title": "Count of crime type",
-          "axis": {"grid": false}
-        },
-        "y": {"title": "Crime Type",
-        "sort": "-x",
-         "field": "crime type"}
-      },
-      "width": 350,
-      "mark": {"type": "bar", "tooltip": true},
-      "selection": {"click": {"encodings": ["color"], "type": "multi"}},
-      "transform": [{"filter": {"selection": "brush"}}]
     }
   ],
-  
-  "config": {
-    "axisY": {
-      "minExtent": 80
-    }
-  }
+  "config": {"axisY": {"minExtent": 80}}
 }
