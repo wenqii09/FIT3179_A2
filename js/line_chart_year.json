@@ -170,6 +170,6 @@
     }
   },
   "config": {"axisY": {
-      "minExtent": 80
+      "minExtent": 100
     }}
 }
