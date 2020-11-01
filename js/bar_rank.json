@@ -39,7 +39,7 @@
         "x": {
           "aggregate": "sum",
           "field": "Crime Rate",
-          "title": "Crime Rate",
+          "title": "Crime Rate 10,000 per Population",
           "axis": {"grid": false}
         }
       },
@@ -55,7 +55,7 @@
         "text": {
           "aggregate": "sum",
           "field": "Crime Rate",
-          "title": "Crime Rate",
+          "title": "Crime Rate 10,000 per Population",
           "format": ".2f"
         }
       }
