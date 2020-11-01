@@ -8,7 +8,10 @@
   "height": 280,
 
   "layer":[
-  {"mark": {"type": "bar", "tooltip": true}},
+  {"mark": {"type": "bar", "tooltip": true},
+  "encoding": { 
+    "x": {"field": "age", "title": "Age Group"},
+    "y": {"field": "percentage", "type": "quantitative", "title": "Percentage of victim (%)"}}},
  {
       "mark": {
             "type": "text",
