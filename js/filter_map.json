@@ -107,7 +107,7 @@
               {
                 "field": "Value",
                 "type": "quantitative",
-                "title": "Crime Rate",
+                "title": "Crime Rate per 10,000 Population",
                 "format": ".2f"
               }
             ]
